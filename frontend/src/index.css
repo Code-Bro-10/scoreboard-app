@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-green: #39ff14;
+  --color-neon-red: #ff073a;
+  --color-dark-bg: #0a0a1a;
+  --color-dark-surface: #1a1a2e;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-bg);
+    color: white;
+    font-family: var(--font-sans);
+  }
+}
+
+@utility glass {
+  background-color: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility glass-card {
+  background-color: rgba(20, 20, 35, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+@utility text-glow-green {
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
+}
+
+@utility border-glow-green {
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+  border-color: rgba(57, 255, 20, 0.5);
+}
+
+@utility border-glow-red {
+  box-shadow: 0 0 15px rgba(255, 7, 58, 0.3);
+  border-color: rgba(255, 7, 58, 0.5);
+}
+
+@utility neo-shadow {
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+}
